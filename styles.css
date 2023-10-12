@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 23rem;
+    margin: 5rem auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.205);
+}
+
+.img-sec {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.096);
+}
+
+.pingpong-racket-img {
+    width: 100%;
+}
+
+.img-sec-p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding-left: 5px;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+#main {
+    padding: 5px;
+}
+
+h1 {
+    margin-bottom: -5px;
+}
+
+.main-sec-p {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.726);
+    margin-bottom: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-right: 3px;
+}
+
+#max-score {
+    border-radius: 15px;
+    padding: 1px 3px;
+    border: 0.1px solid rgba(0, 0, 0, 0.349);
+}
+
+#btn-sec {
+    display: flex;
+    justify-content: stretch;
+    margin-top: 7px;
+}
+
+#player1-btn,#player2-btn,#reset-btn {
+    flex: 1;
+    padding: 12px 9px;
+    border: none;
+    margin: 0 0.5px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+#player1-btn:active,#player2-btn:active,#reset-btn:active {
+    opacity: 0.9;
+}
+
+#player1-btn:disabled,#player2-btn:disabled,#reset-btn:disabled {
+    opacity: 0.7;
+    cursor: default;
+}
+
+#player1-btn {
+    background-color: rgb(36, 170, 36);
+}
+
+#player2-btn {
+    background-color: rgb(64, 172, 223);
+}
+
+#reset-btn {
+    background-color: rgb(233, 46, 46);
+}
+
+.winner {
+    color: rgb(36, 170, 36);
+}
+
+.loser {
+    color:rgb(233, 46, 46);
+} 

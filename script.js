@@ -35,6 +35,7 @@ function resetGame() {
     player1ScoreSpan.classList.remove('loser');
     player2ScoreSpan.classList.remove('winner');
     player2ScoreSpan.classList.remove('loser');
+    console.log('Game Reset');
 };
 
 function gameOver() {

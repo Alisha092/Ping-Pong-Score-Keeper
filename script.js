@@ -22,6 +22,21 @@ function checkScore(playerScore, maxScore, wonPlayer, lostPlayer) {
     }
 };
 
+function resetGame() {
+    player1Score = 0;
+    player2Score = 0;
+    player1ScoreSpan.textContent = `${player1Score} `;
+    player2ScoreSpan.textContent = ` ${player2Score}`;
+    player1Btn.disabled = false;
+    player2Btn.disabled = false;
+    maxScoreSelect.disabled = false;
+    isGameOver = false;
+    player1ScoreSpan.classList.remove('winner');
+    player1ScoreSpan.classList.remove('loser');
+    player2ScoreSpan.classList.remove('winner');
+    player2ScoreSpan.classList.remove('loser');
+};
+
 function gameOver() {
     isGameOver = true;
     player1Btn.disabled = true;
@@ -48,17 +63,4 @@ player2Btn.addEventListener('click', () => {
     }
 });
 
-resetBtn.addEventListener('click', () => {
-    player1Score = 0;
-    player2Score = 0;
-    player1ScoreSpan.textContent = `${player1Score} `;
-    player2ScoreSpan.textContent = ` ${player2Score}`;
-    player1Btn.disabled = false;
-    player2Btn.disabled = false;
-    maxScoreSelect.disabled = false;
-    isGameOver = false;
-    player1ScoreSpan.classList.remove('winner');
-    player1ScoreSpan.classList.remove('loser');
-    player2ScoreSpan.classList.remove('winner');
-    player2ScoreSpan.classList.remove('loser');
-});
+resetBtn.addEventListener('click', resetGame});
